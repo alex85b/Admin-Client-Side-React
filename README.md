@@ -1,4 +1,4 @@
-# Shop-react
+# Shop-react (frontend)
 
 As I delve into learning Django, React, and Docker, I am following an older Udemy course available at https://www.udemy.com/course/react-django-admin, which is about three years old. Consequently, significant modifications are necessary for the code.
 
