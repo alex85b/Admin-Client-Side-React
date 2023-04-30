@@ -1,20 +1,21 @@
 import "./App.css";
-import Nav from "./components/Nav";
-import SideBar from "./components/SideBar";
-import Dashboard from "./components/Dashboard";
+import Login from "./public/Login";
+import Register from "./public/Register";
+import Dashboard from "./secure/dashboard/Dashboard";
+import Users from "./secure/users/Users";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 
 function App() {
   return (
     <div className="App">
-      <Nav />
-      <div className="container-fluid">
-        <div className="row">
-          <SideBar />
-          <main className="col-md-9 ms-sm-auto col-lg-10 px-md-4">
-            <Dashboard />
-          </main>
-        </div>
-      </div>
+      <BrowserRouter>
+        <Routes>
+          <Route path={"/"} Component={Dashboard} />
+          <Route path={"/users"} Component={Users} />
+          <Route path={"/login"} Component={Login} />
+          <Route path={"/register"} Component={Register} />
+        </Routes>
+      </BrowserRouter>
     </div>
   );
 }

@@ -1,8 +1,13 @@
 import React from "react";
+import Wrapper from "../Wrapper";
 
-const Dashboard = () => (
-  <div>
-    <h2>Section title</h2>
+const Dashboard = () => <Wrapper>Dashboard!</Wrapper>;
+
+export default Dashboard;
+
+/*
+
+<h2>Section title</h2>
     <div className="table-responsive">
       <table className="table table-striped table-sm">
         <thead>
@@ -25,7 +30,5 @@ const Dashboard = () => (
         </tbody>
       </table>
     </div>
-  </div>
-);
 
-export default Dashboard;
+*/
